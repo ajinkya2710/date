@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const dateRoutes = require('./routes/dateRoutes.js');
-const { downloadFile } = require('./controllers/dateCheckController.js');
+// const { downloadFile } = require('./controllers/dateCheckController.js');
 
 const app = express();
 
@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Serve API routes
 app.use('/api', dateRoutes);
-app.use('api', downloadFile)
+// app.use('api', downloadFile)
 
 
 // Serve static files from the React app
